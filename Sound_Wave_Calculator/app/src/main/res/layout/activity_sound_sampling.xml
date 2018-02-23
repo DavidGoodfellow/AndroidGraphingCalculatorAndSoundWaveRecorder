@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="sg.edu.nus.tutorials.SoundSamplingActivity">
+
+    <sg.edu.nus.plottingcurves.CSurfaceViewSoundSampling
+        android:id="@+id/surfaceView"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="10"
+        android:soundEffectsEnabled="true" />
+
+
+    <Button
+        android:id="@+id/btn_backToMain"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:onClick="goToMainActivity"
+        android:text="@string/goToMainActivity" />
+
+    <Button
+        android:id="@+id/btn_CaptureSound"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:onClick="captureSound"
+        android:text="@string/capture_sound" />
+
+
+
+
+</LinearLayout>
